@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pixora er et webutviklingsfirma fra Stavanger. Les om teamet, verdiene våre og hva som driver oss.">
+  <title>Om oss — Pixora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Pixora</a>
+    <button class="hamburger" id="ham" aria-label="Meny" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="tjenester.html">Tjenester</a></li>
+      <li><a href="priser.html">Priser</a></li>
+      <li><a href="om-oss.html">Om oss</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <div class="nav-cta-wrap">
+      <a href="kontakt.html" class="btn btn-primary">Kom i gang</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Hvem er vi</span>
+    <h1>Tre fra Stavanger med lidenskap for web</h1>
+    <p>Pixora ble grunnlagt med ett mål: gi norske bedrifter tilgang til profesjonelle nettsider uten store byråpriser.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow">Vår historie</span>
+        <h2>Profesjonell web — for alle</h2>
+        <p>Pixora ble startet i 2026 fordi vi var lei av å se lokale bedrifter betale 80 000–200 000 kr til byråer for nettsider som ble levert tre måneder for sent og aldri oppdatert etterpå. Det er ikke slik det trenger å være.</p>
+        <p>Vi er tre medgründere fra Stavanger — en som koder, en som selger og en som holder styr på pengene. Ingen hierarki, ingen sentralbord. Du snakker direkte med oss.</p>
+        <p>Ambisjonen er enkel: lage nettsider vi selv er stolte av, til en pris som faktisk gir mening for norske bedrifter. Gratis utkast, 3–5 dagers levering og en fast pris fra dag én.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:32px;">
+          <a href="kontakt.html" class="btn btn-primary">Ta kontakt</a>
+          <a href="priser.html" class="btn btn-outline">Se priser</a>
+        </div>
+      </div>
+      <div class="about-visual reveal" aria-hidden="true">
+        <svg width="380" height="300" viewBox="0 0 380 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background card -->
+          <rect x="20" y="20" width="340" height="260" rx="24" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+          <!-- Purple header band -->
+          <rect x="20" y="20" width="340" height="80" rx="24" fill="#6C47FF"/>
+          <rect x="20" y="68" width="340" height="32" fill="#6C47FF"/>
+          <!-- Logo area -->
+          <circle cx="100" cy="60" r="28" fill="rgba(255,255,255,.15)"/>
+          <circle cx="100" cy="60" r="18" fill="rgba(255,255,255,.9)"/>
+          <text x="100" y="66" text-anchor="middle" fill="#6C47FF" font-size="14" font-weight="900" font-family="Inter,sans-serif">P</text>
+          <rect x="140" y="50" width="80" height="12" rx="6" fill="rgba(255,255,255,.7)"/>
+          <rect x="140" y="68" width="52" height="8" rx="4" fill="rgba(255,255,255,.45)"/>
+          <!-- Team avatars in card -->
+          <circle cx="100" cy="158" r="34" fill="linear-gradient(135deg,#6C47FF,#9B7BFF)"/>
+          <circle cx="100" cy="158" r="34" fill="#6C47FF"/>
+          <text x="100" y="164" text-anchor="middle" fill="white" font-size="16" font-weight="800" font-family="Inter,sans-serif">RØ</text>
+          <circle cx="190" cy="158" r="34" fill="#8B5CF6"/>
+          <text x="190" y="164" text-anchor="middle" fill="white" font-size="16" font-weight="800" font-family="Inter,sans-serif">AD</text>
+          <circle cx="280" cy="158" r="34" fill="#7C3AED"/>
+          <text x="280" y="164" text-anchor="middle" fill="white" font-size="16" font-weight="800" font-family="Inter,sans-serif">AF</text>
+          <!-- Names -->
+          <rect x="68" y="200" width="64" height="8"  rx="4" fill="#1E293B"/>
+          <rect x="75" y="214" width="50" height="6"  rx="3" fill="#CBD5E1"/>
+          <rect x="158" y="200" width="64" height="8"  rx="4" fill="#1E293B"/>
+          <rect x="165" y="214" width="50" height="6"  rx="3" fill="#CBD5E1"/>
+          <rect x="248" y="200" width="64" height="8"  rx="4" fill="#1E293B"/>
+          <rect x="255" y="214" width="50" height="6"  rx="3" fill="#CBD5E1"/>
+          <!-- Bottom stats strip -->
+          <rect x="36" y="236" width="92" height="28" rx="8" fill="#F5F3FF"/>
+          <rect x="44" y="244" width="40" height="6" rx="3" fill="#6C47FF"/>
+          <rect x="44" y="254" width="30" height="4" rx="2" fill="#C4B5FD"/>
+          <rect x="144" y="236" width="92" height="28" rx="8" fill="#F5F3FF"/>
+          <rect x="152" y="244" width="40" height="6" rx="3" fill="#6C47FF"/>
+          <rect x="152" y="254" width="30" height="4" rx="2" fill="#C4B5FD"/>
+          <rect x="252" y="236" width="92" height="28" rx="8" fill="#F5F3FF"/>
+          <rect x="260" y="244" width="40" height="6" rx="3" fill="#6C47FF"/>
+          <rect x="260" y="254" width="30" height="4" rx="2" fill="#C4B5FD"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Slik tenker vi</span>
+      <h2>Tre ting vi aldri går på kompromiss med</h2>
+      <p>Det er lett å skrive fine verdier. Det er vanskeligere å faktisk leve etter dem.</p>
+    </div>
+    <div class="values-grid">
+
+      <div class="val-card reveal">
+        <div class="val-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6C47FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <h3>Ærlighet</h3>
+        <p>Fast pris, tydelig tidsplan og ingen skjulte gebyrer. Hvis noe tar lengre tid enn ventet, ringer vi — ikke sender en ny faktura.</p>
+      </div>
+
+      <div class="val-card reveal">
+        <div class="val-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6C47FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>Kvalitet</h3>
+        <p>Vi sender ikke fra oss en nettside vi ikke selv ville vært stolte over. Hver side er testet på mobil, optimalisert for hastighet og gjennomgått til minste detalj.</p>
+      </div>
+
+      <div class="val-card reveal">
+        <div class="val-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6C47FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <h3>Hurtighet</h3>
+        <p>3–5 dager er ikke et markedsføringstriks — det er gjennomsnittet vårt. Du er live på nett før et tradisjonelt byrå har hatt kickoff-møtet sitt.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Teamet</span>
+      <h2>Menneskene bak Pixora</h2>
+      <p>Ingen konsulenter, ingen underleverandører. Tre medgründere som gjør alt selv.</p>
+    </div>
+    <div class="team-grid">
+
+      <div class="team-card reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#8B5CF6,#A78BFA);">AD</div>
+        <h3>Aksel Dørum Middelthon</h3>
+        <p class="team-role">Medgründer &amp; Økonomiansvarlig</p>
+        <p>Aksel styrer Pixoras økonomi og sørger for at alt går opp — budsjetter, fakturering og lønnsomhet. Han er garantisten for at vi alltid kan holde prisene lave og kvaliteten høy.</p>
+      </div>
+
+      <div class="team-card team-card--featured reveal">
+        <div class="team-avatar">RØ</div>
+        <h3>Rasmus Hansen Østensen</h3>
+        <p class="team-role">Medgründer &amp; Teknisk ansvarlig</p>
+        <p>Rasmus leder Pixora og har det overordnede ansvaret for leveranser, kunderelasjoner og teknisk kvalitet. Han styrer utviklingen og sørger for at alle nettsider er raske, sikre og godt optimaliserte.</p>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#7C3AED,#6C47FF);">AF</div>
+        <h3>Arne Farstad</h3>
+        <p class="team-role">Medgründer &amp; Markedssjef</p>
+        <p>Arne er Pixoras ansikt utad. Han pitcher nye kunder, bygger partnerskap og sørger for at Pixora vokser. Han jobber også med SEO og innholdsstrategi slik at kundenes nettsider faktisk blir funnet.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <span class="eyebrow" style="background:rgba(255,255,255,.15);color:#fff;">La oss hjelpe deg</span>
+    <h2>Bli den neste vi hjelper</h2>
+    <p>Send oss en melding. Du hører fra oss samme dag — og du forplikter deg til ingenting.</p>
+    <a href="kontakt.html" class="btn btn-white btn-lg">Ta kontakt</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Pixora</span>
+        <p>Profesjonelle nettsider for norske bedrifter. Levert raskt, designet med kvalitet.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sider</h4>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="tjenester.html">Tjenester</a></li>
+          <li><a href="priser.html">Priser</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tjenester</h4>
+        <ul>
+          <li><a href="tjenester.html">Webdesign</a></li>
+          <li><a href="tjenester.html">Mobiloptimalisering</a></li>
+          <li><a href="tjenester.html">SEO</a></li>
+          <li><a href="tjenester.html">Vedlikehold</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:pixorawebdesigns@gmail.com">pixorawebdesigns@gmail.com</a></li>
+          <li><a href="tel:+4746512634">465 12 634</a></li>
+          <li><span style="color:rgba(255,255,255,.55)">Stavanger, Norge</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Pixora. Alle rettigheter forbeholdt.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>

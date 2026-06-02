@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "pixora",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-p", "5173", "/Users/rasmus/Documents/Pixora/Pixora website"],
+      "port": 5173
+    }
+  ]
+}
