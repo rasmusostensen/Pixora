@@ -362,9 +362,9 @@ spline-viewer { width: 100%; height: 100%; display: block; }
 }
 .mobile-mockup img { width: 100%; display: block; }
 
-@media (max-width: 768px) {
-  .spline-macbook--desktop { display: none; }
-  .spline-macbook--mobile  { display: block; }
+@media (max-width: 1024px) {
+  .spline-macbook--desktop { display: none !important; }
+  .spline-macbook--mobile  { display: block !important; }
   .laptop-showcase { padding-bottom: 60px; }
 }
 
