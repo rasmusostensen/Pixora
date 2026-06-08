@@ -140,14 +140,28 @@
     </div>
   </div>
 
-  <!-- Full-width Spline MacBook stage -->
+  <!-- Full-width MacBook stage -->
   <div class="laptop-stage-outer">
     <div class="laptop-stage">
+
+      <!-- Desktop: 3D Spline scene -->
       <spline-viewer
         url="https://prod.spline.design/zxvyZsujIBa-KHqa/scene.splinecode"
-        class="spline-macbook"
+        class="spline-macbook spline-macbook--desktop"
         loading="lazy"
       ></spline-viewer>
+
+      <!-- Mobile: static browser mockup -->
+      <div class="mobile-mockup spline-macbook--mobile">
+        <div class="mobile-mockup-bar">
+          <div class="mobile-mockup-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mobile-mockup-url">pixora.no</div>
+        </div>
+        <img src="pixora-screenshot.png" alt="Pixora nettside" loading="lazy">
+      </div>
+
     </div><!-- /.laptop-stage -->
   </div><!-- /.laptop-stage-outer -->
 </section>

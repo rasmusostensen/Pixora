@@ -336,17 +336,36 @@ spline-viewer { width: 100%; height: 100%; display: block; }
   width: 100%;
 }
 
-/* Spline MacBook viewer */
-.spline-macbook {
-  width: 100%;
-  height: 600px;
-  display: block;
+/* Spline MacBook viewer — desktop only */
+.spline-macbook { width: 100%; height: 600px; display: block; }
+.spline-macbook--mobile { display: none; }
+
+/* Mobile browser mockup */
+.mobile-mockup {
+  width: 100%; max-width: 480px;
+  border-radius: 12px; overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,0,0,.45), 0 4px 16px rgba(0,0,0,.2);
+  border: 1px solid rgba(255,255,255,.08);
 }
+.mobile-mockup-bar {
+  display: flex; align-items: center; gap: 10px;
+  background: #E8E6E1; padding: 8px 14px;
+}
+.mobile-mockup-dots { display: flex; gap: 5px; }
+.mobile-mockup-dots span { width: 10px; height: 10px; border-radius: 50%; }
+.mobile-mockup-dots span:nth-child(1) { background: #FF5F57; }
+.mobile-mockup-dots span:nth-child(2) { background: #FFBD2E; }
+.mobile-mockup-dots span:nth-child(3) { background: #28CA41; }
+.mobile-mockup-url {
+  flex: 1; background: #fff; border-radius: 6px;
+  font-size: .72rem; color: #555; padding: 4px 10px; text-align: center;
+}
+.mobile-mockup img { width: 100%; display: block; }
+
 @media (max-width: 768px) {
-  .spline-macbook { height: 400px; }
-}
-@media (max-width: 480px) {
-  .spline-macbook { height: 300px; }
+  .spline-macbook--desktop { display: none; }
+  .spline-macbook--mobile  { display: block; }
+  .laptop-showcase { padding-bottom: 60px; }
 }
 
 /* ── model-viewer ─────────────────────────────────────────── */
