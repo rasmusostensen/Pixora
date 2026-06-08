@@ -337,7 +337,12 @@ spline-viewer { width: 100%; height: 100%; display: block; }
 }
 
 /* Spline MacBook viewer — desktop only */
-.spline-macbook { width: 100%; height: 600px; display: block; }
+.spline-macbook-wrap { position: relative; width: 100%; height: 600px; }
+.spline-macbook { width: 100%; height: 100%; display: block; }
+.spline-macbook-block {
+  position: absolute; inset: 0;
+  z-index: 10; cursor: default;
+}
 .spline-macbook--mobile { display: none; }
 
 /* Mobile browser mockup */
@@ -363,7 +368,7 @@ spline-viewer { width: 100%; height: 100%; display: block; }
 .mobile-mockup img { width: 100%; display: block; }
 
 @media (max-width: 1024px) {
-  .spline-macbook--desktop { display: none !important; }
+  .spline-macbook-wrap.spline-macbook--desktop { display: none !important; }
   .spline-macbook--mobile  { display: block !important; }
   .laptop-showcase { padding-bottom: 60px; }
 }

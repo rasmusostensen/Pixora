@@ -143,7 +143,6 @@
   }
 
   /* ── BackgroundPaths: animated flowing lines in hero ─────── */
-  /* Disabled temporarily for debugging
   (function () {
     const hero = document.getElementById('hero');
     if (!hero) return;
@@ -205,7 +204,7 @@
     wrap.appendChild(buildSVG(1));
     wrap.appendChild(buildSVG(-1));
     hero.insertBefore(wrap, hero.firstChild);
-  })();
+  }());
   // end BackgroundPaths
 
   /* ── Spline: forward global cursor to robot ──────────────── */

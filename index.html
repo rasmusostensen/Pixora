@@ -144,12 +144,15 @@
   <div class="laptop-stage-outer">
     <div class="laptop-stage">
 
-      <!-- Desktop: 3D Spline scene -->
-      <spline-viewer
-        url="https://prod.spline.design/zxvyZsujIBa-KHqa/scene.splinecode"
-        class="spline-macbook spline-macbook--desktop"
-        loading="lazy"
-      ></spline-viewer>
+      <!-- Desktop: 3D Spline scene (non-interactive overlay blocks input) -->
+      <div class="spline-macbook-wrap spline-macbook--desktop">
+        <spline-viewer
+          url="https://prod.spline.design/zxvyZsujIBa-KHqa/scene.splinecode"
+          class="spline-macbook"
+          loading="lazy"
+        ></spline-viewer>
+        <div class="spline-macbook-block" aria-hidden="true"></div>
+      </div>
 
       <!-- Mobile: static browser mockup -->
       <div class="mobile-mockup spline-macbook--mobile">
