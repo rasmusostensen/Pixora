@@ -7,7 +7,7 @@
   <title>Pixora — Profesjonelle nettsider fra Stavanger</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -135,67 +135,21 @@
   <div class="container">
     <div class="section-head why-head">
       <span class="eyebrow eyebrow-dark-bg">Slik ser det ut</span>
-      <h2 class="light-heading">Design som faktisk konverterer</h2>
-      <p class="light-subtext">Vi leverer nettsider som ser like profesjonelle ut som de presterer — på alle enheter, alltid.</p>
-    </div>
-    <div class="laptop-stage">
-      <div class="mac-laptop" aria-hidden="true">
-        <!-- Lid + screen -->
-        <div class="mac-lid">
-          <div class="mac-notch-cam"></div>
-          <div class="mac-screen-bezel">
-            <div class="mock-site">
-              <div class="mock-topbar">
-                <div class="mock-logo-block"></div>
-                <div class="mock-links"><span></span><span></span><span></span><span></span></div>
-                <div class="mock-pill"></div>
-              </div>
-              <div class="mock-body">
-                <div class="mock-glow"></div>
-                <div class="mock-badge-sm"></div>
-                <div class="mock-title"></div>
-                <div class="mock-title short grad"></div>
-                <div class="mock-desc"></div>
-                <div class="mock-desc w70"></div>
-                <div class="mock-cta-row">
-                  <div class="mock-cta-btn filled"></div>
-                  <div class="mock-cta-btn outline"></div>
-                </div>
-                <div class="mock-trust">
-                  <span></span><span></span><span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Hinge -->
-        <div class="mac-hinge"></div>
-        <!-- Base / keyboard -->
-        <div class="mac-body">
-          <div class="mac-keys-area">
-            <div class="mac-row fn">
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-            </div>
-            <div class="mac-row">
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-            </div>
-            <div class="mac-row">
-              <i class="wide"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="wide"></i>
-            </div>
-            <div class="mac-row">
-              <i class="wider"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="wider"></i>
-            </div>
-            <div class="mac-row bot">
-              <i class="mod"></i><i class="mod"></i><i class="space"></i><i class="mod"></i><i class="mod"></i>
-            </div>
-          </div>
-          <div class="mac-pad"></div>
-        </div>
-        <div class="mac-foot-bar"></div>
-      </div>
-      <div class="laptop-glow" aria-hidden="true"></div>
+      <h2 class="light-heading">Nettsiden din — slik kundene ser den</h2>
+      <p class="light-subtext">Profesjonell, rask og pen på alle enheter. Dette er standarden vi leverer på.</p>
     </div>
   </div>
+
+  <!-- Full-width Spline MacBook stage -->
+  <div class="laptop-stage-outer">
+    <div class="laptop-stage">
+      <spline-viewer
+        url="https://prod.spline.design/zxvyZsujIBa-KHqa/scene.splinecode"
+        class="spline-macbook"
+        loading="lazy"
+      ></spline-viewer>
+    </div><!-- /.laptop-stage -->
+  </div><!-- /.laptop-stage-outer -->
 </section>
 
 <!-- ═══ PROCESS ════════════════════════════════════════════════════════════════ -->
@@ -293,7 +247,7 @@
 
       <div class="why-card reveal">
         <div class="why-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <h3>Levert på 3–5 dager</h3>
         <p>Ikke "2–4 uker, kanskje". Vi mener det. Gjennomsnittlig leveringstid siden vi startet er 4 dager.</p>
@@ -301,7 +255,7 @@
 
       <div class="why-card reveal">
         <div class="why-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>Ren, rask kode</h3>
         <p>Ingen WordPress, ingen bloated side-builders. Vi holder koden optimalisert og lett — og du trenger ikke forstå en linje av den.</p>
@@ -309,7 +263,7 @@
 
       <div class="why-card reveal">
         <div class="why-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
         </div>
         <h3>Mobil-first</h3>
         <p>Mer enn 60&nbsp;% av besøkende er på mobil. Vi designer for mobil først — og skalerer opp til desktop, ikke omvendt.</p>
@@ -317,7 +271,7 @@
 
       <div class="why-card reveal">
         <div class="why-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
         <h3>SEO fra dag én</h3>
         <p>Meta-tagger, semantisk HTML og rask lastetid er ikke tilleggstjenester — det er standardinnstillingen vår.</p>
@@ -325,7 +279,7 @@
 
       <div class="why-card reveal">
         <div class="why-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
         <h3>Gratis utkast — alltid</h3>
         <p>Du ser ferdig design før du betaler én krone. Liker du det ikke? Ingen fakttura, ingen mas.</p>
@@ -333,7 +287,7 @@
 
       <div class="why-card reveal">
         <div class="why-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
         <h3>Snakk med den som koder</h3>
         <p>Ingen selger, ingen prosjektleder imellom. Du kommuniserer direkte med Rasmus som faktisk bygger siden.</p>
@@ -346,12 +300,12 @@
 <!-- ═══ CTA BANNER ══════════════════════════════════════════════════════════════ -->
 <section class="cta-banner">
   <div class="container">
-    <span class="eyebrow" style="background:rgba(255,255,255,.15);color:#fff;">Klar for neste steg?</span>
+    <span class="eyebrow">Klar for neste steg?</span>
     <h2>Send oss en melding — vi svarer i dag.</h2>
     <p>Fortell oss om bedriften din, så sender vi et gratis utkast innen noen dager. Ingen kontrakt. Ingen overraskelser.</p>
     <div class="cta-actions">
-      <a href="kontakt.html" class="btn btn-white btn-lg">Få gratis utkast</a>
-      <a href="tel:+4746512634" class="btn btn-outline-white btn-lg">Ring oss nå</a>
+      <a href="kontakt.html" class="btn btn-primary btn-lg">Få gratis utkast</a>
+      <a href="tel:+4746512634" class="btn btn-outline btn-lg">Ring oss nå</a>
     </div>
   </div>
 </section>
@@ -399,6 +353,23 @@
 </footer>
 
 <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+<script>
+  /* Show screen overlay only after model-viewer has loaded the 3D model */
+  document.addEventListener('DOMContentLoaded', function () {
+    var mv = document.getElementById('macbook-3d');
+    if (!mv) return;
+    // Hide overlay until model is ready
+    var overlay = mv.querySelector('.macbook-screen-overlay');
+    if (overlay) overlay.style.opacity = '0';
+    mv.addEventListener('load', function () {
+      if (overlay) {
+        overlay.style.transition = 'opacity .5s ease .3s';
+        overlay.style.opacity = '1';
+      }
+    });
+  });
+</script>
 <script src="script.js"></script>
 <script src="chat.js"></script>
 </body>

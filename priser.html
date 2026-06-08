@@ -7,7 +7,7 @@
   <title>Priser — Pixora</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -96,11 +96,12 @@
       </div>
 
       <!-- Nettbutikk -->
-      <div class="price-card reveal">
-        <h3>Nettbutikk</h3>
+      <div class="price-card reveal" style="opacity:.5;pointer-events:none;position:relative;">
+        <div style="position:absolute;top:1rem;right:1rem;background:#111111;color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .75rem;border-radius:100px;">Kommer snart</div>
+        <h3 style="text-decoration:line-through;opacity:.6;">Nettbutikk</h3>
         <p class="price-desc">For bedrifter som vil selge produkter eller tjenester direkte på nett.</p>
         <div class="price-amount">
-          <span class="cur">kr</span><span class="amt">8 000</span>
+          <span class="cur">kr</span><span class="amt" style="text-decoration:line-through;">8 000</span>
         </div>
         <p class="price-monthly">+ 1 000 kr/mnd vedlikehold</p>
         <ul class="price-feats">

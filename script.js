@@ -59,7 +59,7 @@
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       spotlightEl.style.background =
-        `radial-gradient(700px circle at ${x}px ${y}px, rgba(108,71,255,.13) 0%, transparent 65%)`;
+        `radial-gradient(700px circle at ${x}px ${y}px, rgba(0,0,0,.04) 0%, transparent 65%)`;
     });
     heroEl.addEventListener('mouseleave', () => {
       spotlightEl.style.background = 'none';
@@ -131,12 +131,19 @@
   if (splineCard) {
     splineCard.addEventListener('click', (e) => {
       e.stopPropagation(); // prevent the chat.js "click outside → close" handler
-      const toggle = document.getElementById('px-toggle');
-      if (toggle) toggle.click();
+      /* Use the direct open function exposed by chat.js — avoids synthetic
+         click events and event-bubbling race conditions.                    */
+      if (typeof window.pxOpen === 'function') {
+        window.pxOpen();
+      } else {
+        const toggle = document.getElementById('px-toggle');
+        if (toggle) toggle.click();
+      }
     });
   }
 
   /* ── BackgroundPaths: animated flowing lines in hero ─────── */
+  /* Disabled temporarily for debugging
   (function () {
     const hero = document.getElementById('hero');
     if (!hero) return;
@@ -173,11 +180,11 @@
 
         const path = document.createElementNS(NS, 'path');
         path.setAttribute('d', d);
-        path.setAttribute('stroke', '#6C47FF');
+        path.setAttribute('stroke', '#111111');
         path.setAttribute('stroke-width', String(0.5 + i * 0.035));
         // pathLength="1" normalises the path so dash values are 0–1
         path.setAttribute('pathLength', '1');
-        path.style.strokeOpacity = String(0.04 + i * 0.018);
+        path.style.strokeOpacity = String(0.015 + i * 0.009);
         path.style.strokeDasharray = '0.3 0.7'; // 30% visible dash
         // Stagger each path: longer & offset differently
         const dur = (20 + i * 0.55).toFixed(1);
@@ -189,11 +196,17 @@
     }
 
     const wrap = document.createElement('div');
-    wrap.style.cssText = 'position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;';
+    wrap.style.cssText = [
+      'position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;',
+      // Fade paths out on the left so they never cover the hero text
+      'mask-image:linear-gradient(to right,transparent 0%,transparent 28%,rgba(0,0,0,.45) 48%,black 68%);',
+      '-webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 28%,rgba(0,0,0,.45) 48%,black 68%);'
+    ].join('');
     wrap.appendChild(buildSVG(1));
     wrap.appendChild(buildSVG(-1));
     hero.insertBefore(wrap, hero.firstChild);
   })();
+  // end BackgroundPaths
 
   /* ── Spline: forward global cursor to robot ──────────────── */
   /* Without pointer-events:none on spline-viewer, native events reach the
