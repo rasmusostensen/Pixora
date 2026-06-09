@@ -1152,3 +1152,78 @@ footer { background: #111111; color: #FAFAF8; padding: 72px 0 36px; border-top: 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg-2); }
 ::-webkit-scrollbar-thumb { background: var(--line-2); border-radius: 2px; }
+
+/* ═══ PLATFORM GUIDE ═══════════════════════════════════════════════════════ */
+.platform-guide { padding: var(--py) 0; }
+.platform-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.platform-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: 16px;
+  padding: 2rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.platform-card:hover {
+  border-color: var(--p);
+  box-shadow: 0 0 0 3px rgba(108,71,255,0.08);
+}
+.platform-card--featured {
+  border-color: var(--p);
+  background: linear-gradient(135deg, rgba(108,71,255,0.05) 0%, var(--bg-2) 100%);
+}
+.platform-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+}
+.platform-icon {
+  width: 42px; height: 42px;
+  background: var(--bg-3);
+  border: 1px solid var(--line-2);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.platform-card--featured .platform-icon {
+  background: rgba(108,71,255,0.1);
+  border-color: rgba(108,71,255,0.2);
+  color: var(--p);
+}
+.platform-card h3 { font-size: 1.25rem; font-weight: 700; margin: 0; }
+.platform-tag {
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--bg-3);
+  border: 1px solid var(--line-2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  color: var(--text-2);
+  margin-left: auto;
+}
+.platform-tag--purple {
+  background: rgba(108,71,255,0.12);
+  border-color: rgba(108,71,255,0.25);
+  color: var(--p);
+}
+.platform-card > p { font-size: 0.9375rem; color: var(--text-2); line-height: 1.65; margin: 0; }
+.platform-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 0.625rem;
+}
+.platform-list li {
+  display: flex; align-items: center; gap: 0.625rem;
+  font-size: 0.875rem; color: var(--text-2);
+}
+.platform-list svg { stroke: var(--p); flex-shrink: 0; }
+@media (max-width: 768px) {
+  .platform-grid { grid-template-columns: 1fr; }
+}
